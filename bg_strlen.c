@@ -7,5 +7,8 @@
 
 int bg_strlen(char const *str)
 {
-    return 0;
+    char const *tmp = str;
+
+    while (*++tmp);
+    return tmp - str;
 }
